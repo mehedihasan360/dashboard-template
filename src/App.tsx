@@ -17,10 +17,10 @@ export default function App() {
           setBroken={setBroken}
         />
 
-        <div className="flex-1 relative">
+        <div className="flex-1 relative dark:bg-gray-700">
           <Navbar broken={broken} toggled={toggled} setToggled={setToggled} />
           <div className="p-3">
-            <Outlet />N
+            <Outlet />
           </div>
         </div>
       </section>

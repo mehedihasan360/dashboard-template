@@ -14,7 +14,7 @@ const MenuName = () => {
         },
         button: {
           "&:hover": {
-            backgroundColor: "#f2f2f2",
+            backgroundColor: "#262626",
           },
         },
         label: ({ open }) => ({

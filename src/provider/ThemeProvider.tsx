@@ -16,13 +16,15 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
   undefined
 );
 
+const themeName: string = "themes";
+
 const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const presentTheme = localStorage.getItem("we-theme") || "light";
+  const presentTheme = localStorage.getItem(themeName) || "light";
 
   const [theme, setTheme] = useState<string>(presentTheme);
 
   useEffect(() => {
-    localStorage.setItem("themes", theme);
+    localStorage.setItem(themeName, theme);
     document.documentElement.setAttribute("data-theme", theme);
     document.documentElement.setAttribute("class", theme);
   }, [theme]);
