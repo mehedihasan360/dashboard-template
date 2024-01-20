@@ -1,0 +1,26 @@
+.form-container {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-field-style {
+  @apply w-full p-3 mb-3 border outline-none text-xs rounded-xl;
+}
+
+.input-label {
+  @apply m-1 text-xs font-medium;
+}
+
+.required-label {
+  @apply text-red-500 font-medium;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  @apply bg-primary_color;
+}
