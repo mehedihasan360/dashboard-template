@@ -16,7 +16,6 @@ export default function App() {
           setToggled={setToggled}
           setBroken={setBroken}
         />
-
         <div className="flex-1 relative dark:bg-gray-700">
           <Navbar broken={broken} toggled={toggled} setToggled={setToggled} />
           <div className="p-3">
